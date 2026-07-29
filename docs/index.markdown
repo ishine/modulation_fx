@@ -52,15 +52,27 @@ Supplementary audio examples.</p>
         target="_blank" rel="noopener noreferrer">
     </> Code
     </a>
+    <a href="https://aes.org/publications/elibrary-page/?id=23385" 
+        class="btn btn--primary btn--small"
+        target="_blank" rel="noopener noreferrer">
+    🗞️ Paper (JAES)
+    </a>
     <a href="https://arxiv.org/abs/2601.04867" 
         class="btn btn--primary btn--small"
         target="_blank" rel="noopener noreferrer">
-    🗞️ Paper
+    🗞️ Paper (arXiv)
     </a>
 </div>
 
 ##### Abstract
 Modulation effects such as phasers, flangers and chorus effects are heavily used in conjunction with the electric guitar. Machine learning based emulation of analog modulation units has been investigated in recent years, but most methods have either been limited to one class of effect or suffer from a high computational cost or latency compared to canonical digital implementations. Here, we build on previous work and present a framework for modelling flanger, chorus and phaser effects based on differentiable digital signal processing. The model is trained in the time-frequency domain, but at inference operates in the time-domain, requiring zero latency. We investigate the challenges associated with gradient-based optimisation of such effects, and show that low-frequency weighting of loss functions avoids convergence to local minima when learning delay times. We show that when trained against analog effects units, sound output from the model is in some cases perceptually indistinguishable from the reference, but challenges still remain for effects with long delay times and feedback.
+
+<div class="image-container">
+    <figure>
+        <img src="img/jaes_ddsp_time_varying_generic.svg" alt="Model">
+        <figcaption> Model as it appears during training (a) and inference (b). The flanger/chorus variant (FC) uses an interpolated delay line; the phaser variant (P) uses a cascade of all-pass filters. The switch in (b) provides two configurations of the BQ2 filter, either outside (I) or inside (II) the feedback loop. </figcaption>
+    </figure>
+</div>
 
 [//]: # (<p style="font-size: 0.75em">)
 
@@ -101,6 +113,7 @@ Listen below to outputs from the target analog modulation pedals and our models'
 </tbody>
 </table>
 ## BF-2 Flanger
+The examples below were generated with the flanger/chorus variant of the model for the two different feedback configurations: FC-I and FC-II.
 ### Resonance = 0% (no feedback)
 <table>
 <thead>
@@ -141,6 +154,8 @@ Listen below to outputs from the target analog modulation pedals and our models'
 </table>
 
 ## Small Stone Phaser
+The examples below were generated with the phaser variant of the model for the two different feedback configurations: P-I and P-II.
+
 ### Color OFF , Rate = 75%
 <table>
 <thead>
@@ -207,6 +222,8 @@ Listen below to outputs from the target analog modulation pedals and our models'
 </table>
 
 ## SV-1 Supervibe Chorus
+The examples below were generated with the flanger/chorus variant of the model (FC-I), for different number of channels (C) (see paper for more details).
+
 ### Depth = 50%, Wave = 0%
 <table>
 <thead>
