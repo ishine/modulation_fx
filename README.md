@@ -83,3 +83,17 @@ The tables below show the parameter configurations for the 3 effects pedals cons
 
 ### Dataset
 Coming soon!
+
+### Citation
+Is using this work please use the following citation:
+```bibtex
+    @article{Carson2026modfx,
+    title={Gradient-based optimization of modulation effects},
+    author={Carson, Alistair and Wright, Alec and Bilbao, Stefan},
+    year={2026},
+    month=jul,
+    journal={Journal of the Audio Engineering Society},
+    volume={74},
+    pages={533--543},
+    }
+```

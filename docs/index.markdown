@@ -44,7 +44,7 @@ classes:
 <i><a href="https://www.acoustics.ed.ac.uk/" target="_blank" rel="noopener noreferrer">Acoustics and Audio Group</a><br>University of Edinburgh</i> <br>Edinburgh, UK
 </p>
 <p style="font-size: 1.0em; text-align: center">
-Supplementary audio examples.</p>
+Accompanying webpage and audio examples.</p>
 
 <div style="text-align: center; align-items: center">
     <a href="https://github.com/a-carson/modulation_fx" 
@@ -74,28 +74,18 @@ Modulation effects such as phasers, flangers and chorus effects are heavily used
     </figure>
 </div>
 
-[//]: # (<p style="font-size: 0.75em">)
-
-[//]: # (Modulation effects such as phasers, flangers and chorus effects are heavily used in conjunction with the electric guitar. Machine learning based emulation of analog modulation units has been investigated in recent years, but most methods have either been limited to one class of effect or suffer from a high computational cost or latency compared to canonical digital implementations. Here, we build on previous work and present a framework for modelling flanger, chorus and phaser effects based on differentiable digital signal processing. The model is trained in the time-frequency domain, but at inference operates in the time-domain, requiring zero latency. We investigate the challenges associated with gradient-based optimisation of such effects, and show that low-frequency weighting of loss functions avoids convergence to local minima when learning delay times. We show that when trained against analog effects units, sound output from the model is in some cases perceptually indistinguishable from the reference, but challenges still remain for for effects with long delay times and feedback.)
-
-[//]: # (</p>)
-
-[//]: # ()
-[//]: # (<div class="image-container">)
-
-[//]: # (    <figure>)
-
-[//]: # (        <img src="img/jaes_ddsp_time_varying_generic.svg" alt="Fine tuning procedure">)
-
-[//]: # (        <figcaption> )
-
-[//]: # (Proposed model structure as it appears during training &#40;a&#41; and at inference &#40;b&#41;. Training uses the frequency sampling method over short frames of length N samples. Dashed lines indicate the flow of gradients from the loss function to the learnable modules/parameters &#40;coloured yellow&#41;. Inference operates in the time-domain. The switch in position &#40;ii&#41; moves the SVF2 filter within the feedback loop.)
-
-[//]: # (</figcaption>)
-
-[//]: # (    </figure>)
-
-[//]: # (</div>)
+##### Citation
+```bibtex
+    @article{Carson2026modfx,
+    title={Gradient-based optimization of modulation effects},
+    author={Carson, Alistair and Wright, Alec and Bilbao, Stefan},
+    year={2026},
+    month=jul,
+    journal={Journal of the Audio Engineering Society},
+    volume={74},
+    pages={533--543},
+    }
+```
 
 
 # Audio Examples
