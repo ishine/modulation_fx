@@ -24,6 +24,10 @@ python3 inference.py --model_path weights/BF-2-A/qa6tmyhk --in_audio your_file.w
 ```
 where `--model_path` can be replaced with another from the `weights/` directory, and `your_file.wav` can be replaced to a file of your choice.
 
+### Dataset
+The dataset is available here: https://zenodo.org/records/18186611. 
+Download and extract the files into `modulation_dataset` directory, or update DATASET_PATH in `config.py` accordingly.
+
 ### Train models
 Train a model on a given configuration:
 ```angular2html
@@ -81,8 +85,6 @@ The tables below show the parameter configurations for the 3 effects pedals cons
 </tbody>
 </table>
 
-### Dataset
-Coming soon!
 
 ### Citation
 Is using this work please use the following citation:
