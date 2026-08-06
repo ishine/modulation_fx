@@ -38,7 +38,7 @@ classes:
 
 <h2 style="font-size: 1.5em" align="center">Gradient-based Optimisation of Modulation Effects</h2>
 <p style="font-size: 1.0em" align="center">
-<a href="https://a-carson.github.io/cv/" target="_blank" rel="noopener noreferrer"> Alistair Carson</a>, Alec Wright and Stefan Bilbao
+<a href="https://a-carson.github.io/" target="_blank" rel="noopener noreferrer"> Alistair Carson</a>, Alec Wright and Stefan Bilbao
 </p>
 <p style="font-size: 0.75em" align="center">
 <i><a href="https://www.acoustics.ed.ac.uk/" target="_blank" rel="noopener noreferrer">Acoustics and Audio Group</a><br>University of Edinburgh</i> <br>Edinburgh, UK
